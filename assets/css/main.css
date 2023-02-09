@@ -56,6 +56,13 @@ h6 {
   font-family: var(--font-primary);
 }
 
+.t1{
+  font-family: var(--font-primary);
+}
+.p1{
+  font-family: var(--font-default);
+}
+
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -127,7 +134,7 @@ section {
 }
 
 .breadcrumbs h2 {
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 500;
   color: #fff;
   font-family: var(--font-secondary);
