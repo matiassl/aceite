@@ -10,8 +10,10 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: 'Montserrat', sans-serif;
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Work Sans", sans-serif;
 }
@@ -33,9 +35,16 @@
 --------------------------------------------------------------*/
 body {
   font-family: var(--font-default);
-  color: var(--color-default);
-  overflow-x: hidden;
+  background-image: url('');
+	background-position: center;
+	background-repeat: repeat;
+	background-size: 10%;
+	background-color: #fff;
+	overflow-x: hidden;
+    transition: all 200ms linear;
 }
+
+
 
 a {
   color: var(--color-primary);
@@ -56,11 +65,12 @@ h6 {
   font-family: var(--font-primary);
 }
 
-.t1{
+.t1 {
   font-family: var(--font-primary);
 }
-.p1{
-  font-family: var(--font-default);
+
+.p1 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -140,6 +150,13 @@ section {
   font-family: var(--font-secondary);
 }
 
+.breadcrumbs .container .subtitulo {
+  background-color: #748e51;
+  color: white;
+  font-size: 25px;
+}
+
+
 .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
@@ -169,6 +186,16 @@ section {
   padding-right: 10px;
   color: #fff;
   content: "/";
+}
+
+@media (max-width: 767px) {
+  .breadcrumbs h2 {
+    font-size: 36px;
+  }
+
+  .breadcrumbs .container .subtitulo {
+    font-size: 20px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -307,7 +334,7 @@ section {
 
   .navbar li {
     position: relative;
-   
+
   }
 
   .navbar>ul>li {
@@ -438,6 +465,9 @@ section {
   .mobile-nav-hide {
     display: none;
   }
+ .img-90{
+  margin-left: 70px;
+ }
 }
 
 /*--------------------------------------------------------------
@@ -512,7 +542,7 @@ section {
 
   .mobile-nav-show {
     position: relative;
-    color: #fff;
+    color: black;
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -1172,7 +1202,7 @@ section {
 .alt-services .icon-box:hover i {
   background-color: var(--color-primary);
   color: #fff;
-  
+
 }
 
 .alt-services .icon-box h4 {
@@ -2590,7 +2620,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background: url("../img/productos/aceites.jpg") center center no-repeat;
+  background: url("../img/productos/hoja-cannabis.jpg") center center no-repeat;
   background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
@@ -2599,7 +2629,7 @@ section {
 
 .footer:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   inset: 0;
 }
